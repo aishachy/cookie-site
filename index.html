@@ -75,8 +75,8 @@
 
     .swiper-slide img {
       display: block;
-      width: 400px;
-      height: 400px;
+      width: 100%;
+      height: auto;
       object-fit: cover;
     }
   </style>
@@ -97,8 +97,8 @@
 
     .swiper-slide img {
       display: block;
-      width: 400px;
-      height: 300px;
+      width: 100%;
+      height: auto;
       border-radius: 20px;
       object-fit: cover;
     }
@@ -128,7 +128,7 @@
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <p class="text-2xl"><span class="text-button font-bold mr-2">KETO</span>Cookies</p>
+        <p class="text-lg md:text-2xl"><span class="text-button font-bold mr-2">KETO</span>Cookies</p>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 text-lg">
@@ -145,7 +145,7 @@
         <div class="rounded-full border-1 px-2 py-1 mr-3">
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
-        <a class="color-button px-8 py-2 font-bold rounded-full">Join Drop</a>
+        <a class="color-button px-4 py-1 md:px-8 md:py-2 text-sm md:text-lg font-bold rounded-full">Join Drop</a>
       </div>
     </div>
   </section>
@@ -155,13 +155,13 @@
     <div class="animate__animated opacity-0" data-animate="animate__fadeInDown animate__delay-0.5s">
       <img src="close-up-chocolate-cookies.jpg">
       <div class="absolute inset-0"></div>
-      <div class="absolute inset-0 top-25 ml-8 font-bold text-white space-y-3">
-        <h1 class="text-5xl text-button">INDULGENT</h1>
-        <h2 class="text-xl font-medium">Keto Perfection</h2>
-        <p class="font-light">Handcrafted luxury cookies that redefine indulgence.</p>
-        <div class="absolute flex gap-5 text-black font-semibold">
-          <a class="font-bold color-button px-8 py-2 rounded-full">Join The Drop</a>
-          <a class="text-button font-bold border border-gray-300 rounded-full px-8 py-2 text-white">Explore
+      <div class="absolute inset-0 top-6 md:top-25 ml-8 font-bold text-white space-y-1 md:space-y-3">
+        <h1 class="text-xl md:text-5xl text-button">INDULGENT</h1>
+        <h2 class="text-sm md:text-2xl font-medium">Keto Perfection</h2>
+        <p class="text-xs md:text-lg font-light">Handcrafted luxury cookies that redefine indulgence.</p>
+        <div class="absolute flex gap-2 md:gap-5 text-black font-semibold">
+          <a class="md:font-bold font-medium text-xs md:text-xl color-button p-1 md:px-8 md:py-2 rounded-full">Join The Drop</a>
+          <a class="text-button text-xs md:text-xl font-medium md:font-bold border border-gray-300 rounded-full p-1 md:px-8 md:py-2 text-white">Explore
             Flavours</a>
         </div>
       </div>
@@ -172,8 +172,8 @@
   <section>
     <div class="bg-[#0f172a] p-4 space-y-8 py-12">
       <div class="text-white space-y-2 text-center">
-        <h1 class="text-button text-5xl font-bold">Signature Collection</h1>
-        <p class="text-xl font-light">Experience indulgence redefined — handcrafted cookies that turn everyday moments
+        <h1 class="text-button text-3xl md:text-5xl font-bold">Signature Collection</h1>
+        <p class="text-base md:text-xl font-light">Experience indulgence redefined — handcrafted cookies that turn everyday moments
           into something
           unforgettable.</p>
       </div>
@@ -182,7 +182,7 @@
         data-animate="animate__fadeInLeft animate__delay-0.5s">
         <!-- Image Section -->
         <div class="relative w-1/2">
-          <img src="IMG_8066.jpeg" alt="Cookies" class="h-[400px] w-[600px] object-cover hover:-translate-y-3 hover-effect">
+          <img src="IMG_8066.jpeg" alt="Cookies" class="ml-20 md:ml-0 w-[1600px] h-[100px] md:h-[400px] md:w-[600px] object-cover hover:-translate-y-3 hover-effect">
         </div>
 
         <!-- Content Section -->
@@ -197,13 +197,13 @@
 
             <h2 class="text-2xl font-bold text-button mt-2">Stuffed Red Velvet</h2>
 
-            <p class="text-gray-300 text-base mt-4">
+            <p class="text-gray-300 text-sm md:text-base mt-4">
               Indulge in every bite, rich and divine, A velvet dream where flavors entwine.<br>
               Soft, sweet, and perfectly true, Red velvet magic, just for you.
             </p>
           </div>
 
-          <div class="text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
+          <div class="text-xs md:text-base text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
             <p>• Rich, decadent red velvet flavor with a hint of cocoa</p>
             <p>• Soft, moist texture that melts in your mouth</p>
             <p>• Topped with a creamy, tangy cream cheese frosting</p>
@@ -213,10 +213,10 @@
 
           <!-- Buttons -->
           <div class="flex items-center justify-between">
-            <button class="color-button text-black px-6 py-2 rounded-full font-bold">
+            <button class="color-button text-black px-3 py-1 md:px-6 md:py-2 rounded-full text-xs md:text-base font-medium md:font-bold">
               ADD TO CART
             </button>
-            <button class="p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
+            <button class="p-2 md:p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
               $59
             </button>
           </div>
@@ -240,13 +240,13 @@
 
             <h2 class="text-2xl font-bold text-button mt-2">White Chocolate Macadamia Nut</h2>
 
-            <p class="text-gray-300 text-base mt-4">
+            <p class="text-gray-300 text-sm md:text-base mt-4">
               Creamy white chocolate and macadamia nuts unite,Crafting a cookie
               <br> that’s pure delight in every bite.
             </p>
           </div>
 
-          <div class="text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
+          <div class="text-xs md:text-base text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
             <p>• Buttery white chocolate melts with every bite</p>
             <p>• Crunchy macadamia nuts for a delightful texture</p>
             <p>• Soft, chewy cookie base baked to perfection</p>
@@ -256,17 +256,17 @@
 
           <!-- Buttons -->
           <div class="flex items-center justify-between mt-6">
-            <button class="color-button text-black px-6 py-2 rounded-full font-bold">
+            <button class="color-button text-black px-3 py-1 md:px-6 md:py-2 rounded-full text-xs md:text-base font-medium md:font-bold">
               ADD TO CART
             </button>
-            <button class="p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
+            <button class="p-2 md:p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
               $59
             </button>
           </div>
         </div>
         <!-- Image Section -->
         <div class="relative w-1/2">
-          <img src="IMG_8063.jpeg" alt="Cookies" class="h-[400px] w-[600px] object-cover hover:-translate-y-3 hover-effect">
+          <img src="IMG_8063.jpeg" alt="Cookies" class="ml-20 md:ml-0 pb-4 md:pb-0 w-[1600px] h-[100px] md:h-[400px] md:w-[600px] object-cover hover:-translate-y-3 hover-effect">
         </div>
       </div>
       <div
@@ -275,7 +275,7 @@
 
         <!-- Image Section -->
         <div class="relative w-1/2">
-          <img src="IMG_8077.jpeg" alt="Cookies" class="h-[400px] w-[600px] object-cover hover:-translate-y-3 hover-effect">
+          <img src="IMG_8077.jpeg" alt="Cookies" class="ml-20 md:ml-0 w-[1600px] h-[100px] md:h-[400px] md:w-[600px] object-cover hover:-translate-y-3 hover-effect">
         </div>
 
         <!-- Content Section -->
@@ -290,13 +290,13 @@
 
             <h2 class="text-2xl font-bold text-button mt-2">Thin Mint</h2>
 
-            <p class="text-gray-300 text-base mt-4">
+            <p class="text-gray-300 text-sm md:text-base mt-4">
               Cool mint and rich chocolate in perfect harmony,<br>
               A crisp, refreshing bite you’ll crave endlessly.
             </p>
           </div>
 
-          <div class="text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
+          <div class="text-xs md:text-base text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
             <p>• Refreshing mint flavor with a smooth chocolate coating</p>
             <p>• Thin, crisp texture for a light, satisfying crunch</p>
             <p>• Made with premium cocoa and natural mint extracts</p>
@@ -306,10 +306,10 @@
 
           <!-- Buttons -->
           <div class="flex items-center justify-between mt-6">
-            <button class="color-button text-black px-6 py-2 rounded-full font-bold">
+            <button class="color-button text-black px-3 py-1 md:px-6 md:py-2 rounded-full text-xs md:text-base font-medium md:font-bold">
               ADD TO CART
             </button>
-            <button class="p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
+            <button class="p-2 md:p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
               $59
             </button>
           </div>
@@ -322,19 +322,19 @@
   <section>
     <!-- Swiper -->
     <div class="swiper mySwiper bg-[#0f172a]">
-      <h1 class="text-button text-5xl font-bold text-center pb-10">Core Collection</h1>
-      <div class="swiper-wrapper">
+      <h1 class="text-button pt-4 md:pt-0 text-3xl md:text-5xl font-bold text-center pb-10">Core Collection</h1>
+      <div class="swiper-wrapper pb-6">
         <!-- Slide 1 -->
         <div class="swiper-slide">
-          <div class="flex items-center gap-8">
-            <img src="freepik__the-style-is-candid-image-photography-with-natural__5210.jpeg" alt="Cookie" class=" hover-effect">
-            <div class="max-w-md">
-              <h1 class="text-3xl font-extrabold text-white">STIFFLER'S MOM</h1>
-              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
-              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+          <div class="flex flex-col md:flex-row items-center md:gap-8">
+            <img src="freepik__the-style-is-candid-image-photography-with-natural__5210.jpeg" alt="Cookie" class="w-full h-auto md:w-1/2 hover-effect">
+            <div class="w-full md:max-w-md mt-6 md:mt-0 text-center md:text-left">
+              <h1 class="text-xl md:text-3xl font-extrabold text-white">STIFFLER'S MOM</h1>
+              <p class="text-sm md:text-lg italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-xs md:text-sm leading-relaxed">
                 Chocolate chunks, brown sugar, and a hint of vanilla.
               </p>
-              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+              <button class="color-button mt-6 text-sm md:text-lg bg-white text-black font-medium md:font-bold px-2 py-1 md:py-2 md:px-6 rounded-full hover:bg-gray-200">
                 Access The Drop
               </button>
             </div>
@@ -343,15 +343,15 @@
 
         <!-- Slide 2 -->
         <div class="swiper-slide">
-          <div class="flex items-center gap-8">
-            <img src="food-photographer-jennifer-pallian-OfdDiqx8Cz8-unsplash.jpg" alt="Cookie" class=" hover-effect">
-            <div class="max-w-md">
-              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
-              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
-              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+          <div class="flex flex-col md:flex-row items-center md:gap-8">
+            <img src="food-photographer-jennifer-pallian-OfdDiqx8Cz8-unsplash.jpg" alt="Cookie" class="w-full h-auto md:w-1/2 hover-effect">
+            <div class="w-full md:max-w-md mt-6 md:mt-0 text-center md:text-left">
+              <h1 class="text-xl md:text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="text-sm md:text-lg italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-xs md:text-sm leading-relaxed">
                 Chocolate chunks, brown sugar, and a hint of vanilla.
               </p>
-              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+              <button class="color-button mt-6 text-sm md:text-lg bg-white text-black font-medium md:font-bold px-2 py-1 md:py-2 md:px-6 rounded-full hover:bg-gray-200">
                 Access The Drop
               </button>
             </div>
@@ -360,15 +360,15 @@
 
         <!-- Slide 3 -->
         <div class="swiper-slide">
-          <div class="flex items-center gap-8">
-            <img src="mae-mu-ppOPjqAJ3Mw-unsplash.jpg" alt="Cookie" class=" hover-effect">
-            <div class="max-w-md">
-              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
-              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
-              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+          <div class="flex flex-col md:flex-row items-center md:gap-8">
+            <img src="mae-mu-ppOPjqAJ3Mw-unsplash.jpg" alt="Cookie" class="w-full h-auto md:w-1/2 hover-effect">
+            <div class="w-full md:max-w-md mt-6 md:mt-0 text-center md:text-left">
+              <h1 class="text-xl md:text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="text-sm md:text-lg italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-xs md:text-sm leading-relaxed">
                 Chocolate chunks, brown sugar, and a hint of vanilla.
               </p>
-              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+              <button class="color-button mt-6 text-sm md:text-lg bg-white text-black font-medium md:font-bold px-2 py-1 md:py-2 md:px-6 rounded-full hover:bg-gray-200">
                 Access The Drop
               </button>
             </div>
@@ -377,15 +377,15 @@
 
         <!-- Slide 4 -->
         <div class="swiper-slide">
-          <div class="flex items-center gap-8">
-            <img src="charlesdeluvio-Ms9xBg3Gtr8-unsplash.jpg" alt="Cookie" class=" hover-effect">
-            <div class="max-w-md">
-              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
-              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
-              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+          <div class="flex flex-col md:flex-row items-center md:gap-8">
+            <img src="charlesdeluvio-Ms9xBg3Gtr8-unsplash.jpg" alt="Cookie" class="w-full h-auto md:w-1/2 hover-effect">
+            <div class="w-full md:max-w-md mt-6 md:mt-0 text-center md:text-left">
+              <h1 class="text-xl md:text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="text-sm md:text-lg italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-xs md:text-sm leading-relaxed">
                 Chocolate chunks, brown sugar, and a hint of vanilla.
               </p>
-              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+              <button class="color-button mt-6 text-sm md:text-lg bg-white text-black font-medium md:font-bold px-2 py-1 md:py-2 md:px-6 rounded-full hover:bg-gray-200">
                 Access The Drop
               </button>
             </div>
@@ -394,15 +394,15 @@
 
         <!-- Slide 5 -->
         <div class="swiper-slide">
-          <div class="flex items-center gap-8">
-            <img src="blackieshoot-uljC6HyyEJM-unsplash.jpg" alt="Cookie" class=" hover-effect">
-            <div class="max-w-md">
-              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
-              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
-              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+          <div class="flex flex-col md:flex-row items-center md:gap-8">
+            <img src="blackieshoot-uljC6HyyEJM-unsplash.jpg" alt="Cookie" class="w-full h-auto md:w-1/2 hover-effect">
+            <div class="w-full md:max-w-md mt-6 md:mt-0 text-center md:text-left">
+              <h1 class="text-xl md:text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="text-sm md:text-lg italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-xs md:text-sm leading-relaxed">
                 Chocolate chunks, brown sugar, and a hint of vanilla.
               </p>
-              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+              <button class="color-button mt-6 text-sm md:text-lg bg-white text-black font-medium md:font-bold px-2 py-1 md:py-2 md:px-6 rounded-full hover:bg-gray-200">
                 Access The Drop
               </button>
             </div>
@@ -411,33 +411,31 @@
 
         <!-- Slide 5 -->
         <div class="swiper-slide">
-          <div class="flex items-center gap-8">
-            <img src="freepik__the-style-is-candid-image-photography-with-natural__5211.jpeg" alt="Cookie" class=" hover-effect">
-            <div class="max-w-md">
-              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
-              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
-              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+          <div class="flex flex-col md:flex-row items-center md:gap-8">
+            <img src="freepik__the-style-is-candid-image-photography-with-natural__5211.jpeg" alt="Cookie" class="w-full h-auto md:w-1/2 hover-effect">
+            <div class="w-full md:max-w-md mt-6 md:mt-0 text-center md:text-left">
+              <h1 class="text-xl md:text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="text-sm md:text-lg italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-xs md:text-sm leading-relaxed">
                 Chocolate chunks, brown sugar, and a hint of vanilla.
               </p>
-              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+              <button class="color-button mt-6 text-sm md:text-lg bg-white text-black font-medium md:font-bold px-2 py-1 md:py-2 md:px-6 rounded-full hover:bg-gray-200">
                 Access The Drop
               </button>
             </div>
           </div>
         </div>
-
-        <div class="swiper-pagination"></div>
       </div>
   </section>
 
   <!--baking process-->
   <section>
-    <h1 class="text-5xl text-center text-button py-10 font-bold">Our 3-day Baking Process</h1>
+    <h1 class="text-3xl md:text-5xl text-center text-button py-10 font-bold">Our 3-day Baking Process</h1>
     <div class="container space-y-3">
       <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2">
         <!-- left -->
-        <div class="flex flex-row-reverse md:contents">
-          <div class=" col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md text-black ">
+        <div class="flex flex-col md:flex-row-reverse md:contents">
+          <div class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md text-black order-2 md:order-none">
             <h3 class="font-semibold text-xl mb-1">PREPARATION</h3>
             <p class="leading-relaxed text-justify text-gray-800">
               Sift together the flour and baking soda.
@@ -448,31 +446,31 @@
               low speed just long enough to combine the ingredients.
             </p>
           </div>
-          <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-10 order-1 md:order-none">
             <div class="h-full w-6 flex items-center justify-center">
               <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
             </div>
             <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div class="col-start-6 col-end-10 mr-auto">
+          <div class="col-start-6 col-end-10 mr-auto order-3 md:order-none">
             <img src="73b50c26-9a34-44ea-adf6-2ae4601a4d52.png" alt="Preparation"
-              class="rounded-xl shadow-lg w-72 h-72 hover-effect" />
+              class="rounded-xl shadow-lg w-full h-auto md:h-72 md:w-72 hover-effect" />
           </div>
         </div>
         <!-- right -->
-        <div class="flex md:contents">
+        <div class="flex flex-col md:contents">
           <!-- Image on left -->
-          <div class="col-start-1 col-end-5 ml-auto">
+          <div class="col-start-1 col-end-5 ml-auto order-1 md:order-none">
             <img src="skyler-ewing-2uiZDQYTHBM-unsplash.jpg" alt="Making Dough"
-              class="rounded-xl shadow-lg w-72 h-72 hover-effect" />
+              class="rounded-xl shadow-lg w-full h-auto md:h-72 md:w-72 hover-effect" />
           </div>
-          <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+          <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative order-2 md:order-none">
             <div class="h-full w-6 flex items-center justify-center">
               <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
             </div>
             <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div class="text-black col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+          <div class="text-black col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md order-3 md:order-none">
             <h3 class="font-semibold text-xl mb-1">MAKING DOUGH</h3>
             <p class="leading-relaxed text-justify text-gray-800">
               Heat the oven to 190C/170C fan/gas 5. Cream the butter in a large bowl with a wooden spoon or in a stand
@@ -483,8 +481,8 @@
           </div>
         </div>
         <!-- left -->
-        <div class="flex flex-row-reverse md:contents">
-          <div class=" col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md text-black">
+        <div class="flex flex-col md:flex-row-reverse md:contents">
+          <div class="col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md text-black order-2 md:order-none">
             <h3 class="font-semibold text-xl mb-1">PREPARATION</h3>
             <p class="leading-relaxed text-justify text-gray-800">
               Sift together the flour and baking soda.
@@ -501,9 +499,9 @@
             </div>
             <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
           </div>
-          <div class="col-start-6 col-end-10 mr-auto">
+          <div class="col-start-6 col-end-10 mr-auto order-3 md:order-none">
             <img src="andrew-valdivia-WJbbdU1-6Dg-unsplash.jpg" alt="Preparation"
-              class="rounded-xl shadow-lg w-72 h-72 hover-effect" />
+              class="rounded-xl shadow-lg w-full h-auto md:h-72 md:w-72 hover-effect" />
           </div>
         </div>
       </div>
@@ -513,13 +511,13 @@
   <!--ingredients-->
   <section>
     <div class="swiper mySwiper2 bg-[#0f172a]">
-      <h1 class="text-5xl text-center font-bold text-button py-10">World Class Ingredients</h1>
+      <h1 class="text-3xl md:text-5xl text-center font-bold text-button py-10">World Class Ingredients</h1>
       <div class="swiper-wrapper mb-5">
         <div class="swiper-slide">
           <div class=" space-y-3">
-            <img src="1.jpg"></img>
-            <h1 class="text-2xl font-bold text-white">PREMIUM FRENCH CHOCOLATE</h1>
-            <p class="text-base text-gray-300">Premium French chocolate is characterized by its high quality, refined
+            <img src="1.jpg" class="w-[200px] h-[100px] md:w-[400px] md:h-[300px]"></img>
+            <h1 class="text-base md:text-2xl font-bold text-white">PREMIUM FRENCH CHOCOLATE</h1>
+            <p class="text-xs md:text-base text-gray-300">Premium French chocolate is characterized by its high quality, refined
               flavors, and
               meticulous craftsmanship. It often features a higher cocoa content, resulting in a darker, less sweet, and
               more intense flavor profile. French chocolatiers are renowned for their expertise in selecting fine cocoa
@@ -528,9 +526,9 @@
         </div>
         <div class="swiper-slide">
           <div class="space-y-3">
-            <img src="2.jpg"></img>
-            <h1 class="text-2xl font-bold text-white">PRECISION MILLED-FLOUR</h1>
-            <p class="text-base text-gray-300">Precision milled flour refers to flour that is ground with great care and
+            <img src="2.jpg" class="w-[200px] h-[100px] md:w-[400px] md:h-[300px]"></img>
+            <h1 class="text-base md:text-2xl font-bold text-white">PRECISION MILLED-FLOUR</h1>
+            <p class="text-xs md:text-base text-gray-300">Precision milled flour refers to flour that is ground with great care and
               attention to
               detail, often on demand, to ensure optimal freshness and quality. This milling process often involves
               using specialized equipment like stone mills, which helps preserve the nutritional value and natural
@@ -539,9 +537,9 @@
         </div>
         <div class="swiper-slide">
           <div class="space-y-3">
-            <img src="3.jpg"></img>
-            <h1 class="text-2xl font-bold text-white">SLOW-CHURNED BUTTER</h1>
-            <p class="text-base text-gray-300">Slow-churned butter is a type of butter made by slowly agitating cream,
+            <img src="3.jpg" class="w-[200px] h-[100px] md:w-[400px] md:h-[300px]"></img>
+            <h1 class="text-base md:text-2xl font-bold text-white">SLOW-CHURNED BUTTER</h1>
+            <p class="text-xs md:text-base text-gray-300">Slow-churned butter is a type of butter made by slowly agitating cream,
               allowing the
               fat globules to clump together and form butter. This traditional method, often involving a maturation
               stage, develops a richer, creamier texture with a distinctive nutty or hazelnut flavor. The slow churning
@@ -550,9 +548,9 @@
         </div>
         <div class="swiper-slide">
           <div class="space-y-3">
-            <img src="4.jpg"></img>
-            <h1 class="text-2xl font-bold text-white">TAHITIAN VANILLA BEANS</h1>
-            <p class="text-base text-gray-300">Tahitian vanilla beans, derived from the Vanilla tahitensis orchid, are
+            <img src="4.jpg" class="w-[200px] h-[100px] md:w-[400px] md:h-[300px]"></img>
+            <h1 class="text-base md:text-2xl font-bold text-white">TAHITIAN VANILLA BEANS</h1>
+            <p class="text-xs md:text-base text-gray-300">Tahitian vanilla beans, derived from the Vanilla tahitensis orchid, are
               known for their
               distinct floral, fruity, and slightly sweet flavor profile with notes of cherry, anise, and caramel. They
               are typically longer and plumper than other vanilla bean varieties, with a high oil content and a moist,
@@ -561,9 +559,9 @@
         </div>
         <div class="swiper-slide">
           <div class="space-y-3">
-            <img src="5.jpg"></img>
-            <h1 class="text-2xl font-bold text-white">MALDON SEA SALT FLAKES</h1>
-            <p class="text-base text-gray-300">Maldon Sea Salt Flakes are renowned for their unique pyramid-shaped
+            <img src="5.jpg" class="w-[200px] h-[100px] md:w-[400px] md:h-[300px]"></img>
+            <h1 class="text-base md:text-2xl font-bold text-white">MALDON SEA SALT FLAKES</h1>
+            <p class="text-xs md:text-base text-gray-300">Maldon Sea Salt Flakes are renowned for their unique pyramid-shaped
               crystals and
               delicate texture, offering a clean, fresh flavor that enhances dishes without being overpowering. These
               flakes are known for their satisfying crunch and ability to dissolve quickly, making them ideal for
@@ -576,10 +574,10 @@
 
   <!--exclusive deals-->
   <section class="mt-12 mx-4">
-    <h1 class="text-5xl text-center font-bold text-button mb-12">Exclusive Deals</h1>
-    <div class="flex justify-evenly items-center">
+    <h1 class="text-3xl md:text-5xl text-center font-bold text-button mb-12">Exclusive Deals</h1>
+    <div class="md:flex justify-evenly items-center">
       <div>
-        <img src="466.jpeg" class="w-[600px] h-[600px]">
+        <img src="466.jpeg" class="ml-6 mb-3 md:m-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px]">
       </div>
       <div class="space-y-6 text-white">
         <div class="px-20 rounded-xl py-3 flex flex-col justify-center bg-[#0f172a]">
@@ -590,12 +588,12 @@
 
             <h2 class="text-center text-2xl font-bold text-white mt-1">$48</h2>
 
-            <p class="text-base mt-3">
+            <p class="text-sm md:text-base mt-3">
               12 handcrafted cookies with personalized flavor selection
             </p>
           </div>
 
-          <div class="text-sm text-gray-300">
+          <div class="text-xs md:text-sm text-gray-300">
             <p>• 6 artisanal cookies</p>
             <p>• 2 cookies of each signature flavor</p>
             <p>• Premium packaging</p>
@@ -603,7 +601,7 @@
 
           <!-- Buttons -->
           <div class="mt-4">
-            <button class="color-button text-black px-6 py-2 w-full rounded-full font-bold">
+            <button class="color-button text-black text-sm md:text-lg px-2 py-1 md:px-6 md:py-2 w-full rounded-full font-medium md:font-bold">
               ADD TO CART
             </button>
           </div>
@@ -616,12 +614,12 @@
 
             <h2 class="text-center text-2xl font-bold text-white mt-1">$48</h2>
 
-            <p class="text-base mt-3">
+            <p class="text-sm md:text-base mt-3">
               6 handcrafted cookies with personalized flavor selection
             </p>
           </div>
 
-          <div class="text-sm text-gray-300">
+          <div class="text-xs md:text-sm text-gray-300">
             <p>• 6 artisanal cookies</p>
             <p>• 2 cookies of each signature flavor</p>
             <p>• Premium packaging</p>
@@ -629,7 +627,7 @@
 
           <!-- Buttons -->
           <div class="mt-4">
-            <button class="color-button text-black px-6 py-2 w-full rounded-full font-bold">
+            <button class="color-button text-black text-sm md:text-lg px-2 py-1 md:px-6 md:py-2 w-full rounded-full font-medium md:font-bold">
               ADD TO CART
             </button>
           </div>
@@ -642,19 +640,19 @@
 
             <h2 class="text-center text-2xl font-bold text-white mt-1">$59</h2>
 
-            <p class="text-base mt-3">
+            <p class="text-sm md:text-base mt-3">
               12 handcrafted cookies with personalized flavor selection
             </p>
           </div>
 
-          <div class="text-sm text-gray-300">
+          <div class="text-xs md:text-sm text-gray-300">
             <p>• All flavours</p>
             <p>• Premium packaging</p>
           </div>
 
           <!-- Buttons -->
           <div class="mt-4">
-            <button class="color-button text-black px-6 py-2 w-full rounded-full font-bold">
+            <button class="color-button text-black text-sm md:text-lg px-2 py-1 md:px-6 md:py-2 w-full rounded-full font-medium md:font-bold">
               ADD TO CART
             </button>
           </div>
@@ -666,8 +664,8 @@
 
   <!--review-->
   <section class="my-8">
-    <h1 class="text-5xl text-center font-bold text-button">Review</h1>
-    <div class="flex gap-7">
+    <h1 class="text-3xl md:text-5xl text-center font-bold text-button">Review</h1>
+    <div class="md:flex gap-7">
       <div class="shadow-xl px-4 py-8 rounded-xl border-white animate__animated" data-animate="animate__slideInLeft">
         <div class="flex space-x-2 items-center">
           <img src="img-1.jpg" class="w-10 rounded-lg">
@@ -709,7 +707,7 @@
 
   <!--blog-->
   <section>
-    <div class="flex justify-evenly bg-[#0f172a] space-y-3 py-12">
+    <div class="md:flex justify-evenly bg-[#0f172a] space-y-3 py-12">
       <div class="card bg-base-100 w-96 shadow-sm bg-gray-700">
         <figure>
           <img class="h-56 w-full" src="freepik__the-style-is-candid-image-photography-with-natural__23311.png" />
@@ -775,12 +773,12 @@
   <!--newsletter-->
   <section>
     <div class="text-center space-y-3 bg-[#111827] text-white py-8">
-      <h1 class="text-5xl text-center text-button font-bold">Stay In Touch</h1>
-      <p>Join our exclusive waitlist to be the first to know when <br>
+      <h1 class="text-3xl md:text-5xl text-center text-button font-bold">Stay In Touch</h1>
+      <p class="text-sm md:text-base">Join our exclusive waitlist to be the first to know when <br>
         our next limited cookie drop becomes available. Spots fill up fast!</p>
       <div class="flex items-center justify-center gap-5">
-        <input type="email" class="px-12 py-2 rounded-md" placeholder="Your Email Address">
-        <button type="button" class="border px-8 py-2 color-button rounded-full text-black font-bold">SUBSCRIBE</button>
+        <input type="email" class="ml-2 md:m-0 px-6 py-1 md:px-12 md:py-2 rounded-md" placeholder="Your Email Address">
+        <button type="button" class="border px-4 py-1 md:px-8 md:py-2 color-button rounded-full text-black text-sm md:text-lg font-medium md:font-bold">SUBSCRIBE</button>
       </div>
     </div>
   </section>
@@ -828,6 +826,7 @@
       <p>Copyright © 2025 - All right reserved by KETO Cookie</p>
     </aside>
   </footer>
+  
 
   <script>
     document.addEventListener("DOMContentLoaded", () => {
