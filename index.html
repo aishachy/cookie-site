@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="././style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://kit.fontawesome.com/440480c148.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>KETO Cookie</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- Demo styles -->
+  <!-- Demo styles -->
+  <style>
+    .color-button {
+      background: linear-gradient(150deg, #f9d71c 0%, #ff9a9e 50%, #fecfef 100%);
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(249, 215, 28, 0.25);
+      border: none;
+      cursor: pointer;
+    }
+
+    .text-button {
+      background: linear-gradient(150deg, #f9d71c 0%, #ff9a9e 50%, #fecfef 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    a,
+    button,
+    .card,
+    .clickable {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Lift up on hover */
+    a:hover,
+    button:hover,
+    .card:hover,
+    .clickable:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .hover-effect {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hover-effect:hover {
+      transform: translateY(-6px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+  </style>
+
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+  </style>
+  <style>
+    .swiper2 {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 400px;
+      height: 300px;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  </style>
+
+</head>
+
+<body class="container mx-auto">
+  <!--Navbar -->
+  <section>
+    <div class="navbar bg-base-100 shadow-sm">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="text-lg menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Flavours</a></li>
+            <li><a>Process</a></li>
+            <li><a>Collection</a></li>
+            <li><a>Subscription</a></li>
+            <li><a>Reviews</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <p class="text-2xl"><span class="text-button font-bold mr-2">KETO</span>Cookies</p>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-lg">
+          <li><a>Home</a></li>
+          <li><a>Flavours</a></li>
+          <li><a>Process</a></li>
+          <li><a>Collection</a></li>
+          <li><a>Subscription</a></li>
+          <li><a>Reviews</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="rounded-full border-1 px-2 py-1 mr-3">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <a class="color-button px-8 py-2 font-bold rounded-full">Join Drop</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Banner-->
+  <section>
+    <div class="animate__animated opacity-0" data-animate="animate__fadeInDown animate__delay-0.5s">
+      <img src="close-up-chocolate-cookies.jpg">
+      <div class="absolute inset-0"></div>
+      <div class="absolute inset-0 top-25 ml-8 font-bold text-white space-y-3">
+        <h1 class="text-5xl text-button">INDULGENT</h1>
+        <h2 class="text-xl font-medium">Keto Perfection</h2>
+        <p class="font-light">Handcrafted luxury cookies that redefine indulgence.</p>
+        <div class="absolute flex gap-5 text-black font-semibold">
+          <a class="font-bold color-button px-8 py-2 rounded-full">Join The Drop</a>
+          <a class="text-button font-bold border border-gray-300 rounded-full px-8 py-2 text-white">Explore
+            Flavours</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Signature Collection-->
+  <section>
+    <div class="bg-[#0f172a] p-4 space-y-8 py-12">
+      <div class="text-white space-y-2 text-center">
+        <h1 class="text-button text-5xl font-bold">Signature Collection</h1>
+        <p class="text-xl font-light">Experience indulgence redefined — handcrafted cookies that turn everyday moments
+          into something
+          unforgettable.</p>
+      </div>
+      <div
+        class="bg-[#111827] rounded-2xl overflow-hidden shadow-xl w-full flex flex-col md:flex-row animate__animated opacity-0"
+        data-animate="animate__fadeInLeft animate__delay-0.5s">
+        <!-- Image Section -->
+        <div class="relative w-1/2">
+          <img src="IMG_8066.jpeg" alt="Cookies" class="h-[400px] w-[600px] object-cover hover:-translate-y-3 hover-effect">
+        </div>
+
+        <!-- Content Section -->
+        <div class="p-6 md:w-1/2 flex flex-col justify-center">
+
+          <!-- Header -->
+          <div>
+            <div class="flex items-center gap-2 text-yellow-400 font-semibold">
+              <span class="text-lg">01</span>
+              <span>★★★★★</span>
+            </div>
+
+            <h2 class="text-2xl font-bold text-button mt-2">Stuffed Red Velvet</h2>
+
+            <p class="text-gray-300 text-base mt-4">
+              Indulge in every bite, rich and divine, A velvet dream where flavors entwine.<br>
+              Soft, sweet, and perfectly true, Red velvet magic, just for you.
+            </p>
+          </div>
+
+          <div class="text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
+            <p>• Rich, decadent red velvet flavor with a hint of cocoa</p>
+            <p>• Soft, moist texture that melts in your mouth</p>
+            <p>• Topped with a creamy, tangy cream cheese frosting</p>
+            <p>• Made with premium ingredients for an indulgent treat</p>
+            <p>• Perfectly balanced sweetness for every occasion</p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex items-center justify-between">
+            <button class="color-button text-black px-6 py-2 rounded-full font-bold">
+              ADD TO CART
+            </button>
+            <button class="p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
+              $59
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[#111827] rounded-2xl overflow-hidden shadow-xl w-full flex flex-col md:flex-row animate__animated opacity-0"
+        data-animate="animate__fadeInRight animate__delay-0.5s">
+
+
+
+        <!-- Content Section -->
+        <div class="p-6 md:w-1/2 flex flex-col justify-center">
+
+          <!-- Header -->
+          <div>
+            <div class="flex items-center gap-2 text-yellow-400 font-semibold">
+              <span class="text-lg">02</span>
+              <span>★★★★★</span>
+            </div>
+
+            <h2 class="text-2xl font-bold text-button mt-2">White Chocolate Macadamia Nut</h2>
+
+            <p class="text-gray-300 text-base mt-4">
+              Creamy white chocolate and macadamia nuts unite,Crafting a cookie
+              <br> that’s pure delight in every bite.
+            </p>
+          </div>
+
+          <div class="text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
+            <p>• Buttery white chocolate melts with every bite</p>
+            <p>• Crunchy macadamia nuts for a delightful texture</p>
+            <p>• Soft, chewy cookie base baked to perfection</p>
+            <p>• Crafted with premium ingredients for rich flavor</p>
+            <p>• A perfect balance of sweet and nutty goodness</p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex items-center justify-between mt-6">
+            <button class="color-button text-black px-6 py-2 rounded-full font-bold">
+              ADD TO CART
+            </button>
+            <button class="p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
+              $59
+            </button>
+          </div>
+        </div>
+        <!-- Image Section -->
+        <div class="relative w-1/2">
+          <img src="IMG_8063.jpeg" alt="Cookies" class="h-[400px] w-[600px] object-cover hover:-translate-y-3 hover-effect">
+        </div>
+      </div>
+      <div
+        class="bg-[#111827] rounded-2xl overflow-hidden shadow-xl w-full flex flex-col md:flex-row animate__animated opacity-0"
+        data-animate="animate__fadeInLeft animate__delay-0.5s">
+
+        <!-- Image Section -->
+        <div class="relative w-1/2">
+          <img src="IMG_8077.jpeg" alt="Cookies" class="h-[400px] w-[600px] object-cover hover:-translate-y-3 hover-effect">
+        </div>
+
+        <!-- Content Section -->
+        <div class="p-6 md:w-1/2 flex flex-col justify-center">
+
+          <!-- Header -->
+          <div>
+            <div class="flex items-center gap-2 text-yellow-400 font-semibold">
+              <span class="text-lg">03</span>
+              <span>★★★★★</span>
+            </div>
+
+            <h2 class="text-2xl font-bold text-button mt-2">Thin Mint</h2>
+
+            <p class="text-gray-300 text-base mt-4">
+              Cool mint and rich chocolate in perfect harmony,<br>
+              A crisp, refreshing bite you’ll crave endlessly.
+            </p>
+          </div>
+
+          <div class="text-white px-4 py-3 my-3 bg-gray-700 bg-opacity-10 border-yellow-400 border-2 rounded-3xl">
+            <p>• Refreshing mint flavor with a smooth chocolate coating</p>
+            <p>• Thin, crisp texture for a light, satisfying crunch</p>
+            <p>• Made with premium cocoa and natural mint extracts</p>
+            <p>• Perfectly balanced sweetness with a cool finish</p>
+            <p>• An iconic classic loved by cookie fans everywhere</p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="flex items-center justify-between mt-6">
+            <button class="color-button text-black px-6 py-2 rounded-full font-bold">
+              ADD TO CART
+            </button>
+            <button class="p-3 rounded-full border-2 border-gray-600 text-button hover:text-white">
+              $59
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Cookies Collection-->
+  <section>
+    <!-- Swiper -->
+    <div class="swiper mySwiper bg-[#0f172a]">
+      <h1 class="text-button text-5xl font-bold text-center pb-10">Core Collection</h1>
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <div class="flex items-center gap-8">
+            <img src="freepik__the-style-is-candid-image-photography-with-natural__5210.jpeg" alt="Cookie" class=" hover-effect">
+            <div class="max-w-md">
+              <h1 class="text-3xl font-extrabold text-white">STIFFLER'S MOM</h1>
+              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+                Chocolate chunks, brown sugar, and a hint of vanilla.
+              </p>
+              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+                Access The Drop
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <div class="flex items-center gap-8">
+            <img src="food-photographer-jennifer-pallian-OfdDiqx8Cz8-unsplash.jpg" alt="Cookie" class=" hover-effect">
+            <div class="max-w-md">
+              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+                Chocolate chunks, brown sugar, and a hint of vanilla.
+              </p>
+              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+                Access The Drop
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <div class="flex items-center gap-8">
+            <img src="mae-mu-ppOPjqAJ3Mw-unsplash.jpg" alt="Cookie" class=" hover-effect">
+            <div class="max-w-md">
+              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+                Chocolate chunks, brown sugar, and a hint of vanilla.
+              </p>
+              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+                Access The Drop
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="swiper-slide">
+          <div class="flex items-center gap-8">
+            <img src="charlesdeluvio-Ms9xBg3Gtr8-unsplash.jpg" alt="Cookie" class=" hover-effect">
+            <div class="max-w-md">
+              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+                Chocolate chunks, brown sugar, and a hint of vanilla.
+              </p>
+              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+                Access The Drop
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="flex items-center gap-8">
+            <img src="blackieshoot-uljC6HyyEJM-unsplash.jpg" alt="Cookie" class=" hover-effect">
+            <div class="max-w-md">
+              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+                Chocolate chunks, brown sugar, and a hint of vanilla.
+              </p>
+              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+                Access The Drop
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="swiper-slide">
+          <div class="flex items-center gap-8">
+            <img src="freepik__the-style-is-candid-image-photography-with-natural__5211.jpeg" alt="Cookie" class=" hover-effect">
+            <div class="max-w-md">
+              <h1 class="text-3xl font-extrabold text-white">GRANDMA'S SECRET</h1>
+              <p class="italic text-gray-300">(CHOCOLATE CHIP)</p>
+              <p class="mt-4 text-gray-300 text-sm leading-relaxed">
+                Chocolate chunks, brown sugar, and a hint of vanilla.
+              </p>
+              <button class="color-button mt-6 bg-white text-black font-bold py-2 px-6 rounded-full hover:bg-gray-200">
+                Access The Drop
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+  </section>
+
+  <!--baking process-->
+  <section>
+    <h1 class="text-5xl text-center text-button py-10 font-bold">Our 3-day Baking Process</h1>
+    <div class="container space-y-3">
+      <div class="flex flex-col md:grid grid-cols-9 mx-auto p-2">
+        <!-- left -->
+        <div class="flex flex-row-reverse md:contents">
+          <div class=" col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md text-black ">
+            <h3 class="font-semibold text-xl mb-1">PREPARATION</h3>
+            <p class="leading-relaxed text-justify text-gray-800">
+              Sift together the flour and baking soda.
+
+              Cream together the sugars, butter and salt with the puddle attachment, starting on low speed and
+              increasing to medium speed, until light and fluffy. Scrape down the bowl as needed to blend evenly. Add
+              the peanut butter and blend together. Add the sifted flour and baking soda and the cooled peanuts. Mix on
+              low speed just long enough to combine the ingredients.
+            </p>
+          </div>
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
+          </div>
+          <div class="col-start-6 col-end-10 mr-auto">
+            <img src="73b50c26-9a34-44ea-adf6-2ae4601a4d52.png" alt="Preparation"
+              class="rounded-xl shadow-lg w-72 h-72 hover-effect" />
+          </div>
+        </div>
+        <!-- right -->
+        <div class="flex md:contents">
+          <!-- Image on left -->
+          <div class="col-start-1 col-end-5 ml-auto">
+            <img src="skyler-ewing-2uiZDQYTHBM-unsplash.jpg" alt="Making Dough"
+              class="rounded-xl shadow-lg w-72 h-72 hover-effect" />
+          </div>
+          <div class="col-start-5 col-end-6 mr-10 md:mx-auto relative">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
+          </div>
+          <div class="text-black col-start-6 col-end-10 p-4 rounded-xl my-4 mr-auto shadow-md">
+            <h3 class="font-semibold text-xl mb-1">MAKING DOUGH</h3>
+            <p class="leading-relaxed text-justify text-gray-800">
+              Heat the oven to 190C/170C fan/gas 5. Cream the butter in a large bowl with a wooden spoon or in a stand
+              mixer until it is soft. Add the sugar and keep beating until the mixture is light and fluffy. Sift in the
+              flour and add the optional ingredients, if you’re using them. Bring the mixture together with your hands
+              in a figure-of-eight motion until it forms a dough. You can freeze the dough at this point.
+            </p>
+          </div>
+        </div>
+        <!-- left -->
+        <div class="flex flex-row-reverse md:contents">
+          <div class=" col-start-1 col-end-5 p-4 rounded-xl my-4 ml-auto shadow-md text-black">
+            <h3 class="font-semibold text-xl mb-1">PREPARATION</h3>
+            <p class="leading-relaxed text-justify text-gray-800">
+              Sift together the flour and baking soda.
+
+              Cream together the sugars, butter and salt with the puddle attachment, starting on low speed and
+              increasing to medium speed, until light and fluffy. Scrape down the bowl as needed to blend evenly. Add
+              the peanut butter and blend together. Add the sifted flour and baking soda and the cooled peanuts. Mix on
+              low speed just long enough to combine the ingredients.
+            </p>
+          </div>
+          <div class="col-start-5 col-end-6 md:mx-auto relative mr-10">
+            <div class="h-full w-6 flex items-center justify-center">
+              <div class="h-full w-1 bg-blue-800 pointer-events-none"></div>
+            </div>
+            <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-blue-500 shadow"></div>
+          </div>
+          <div class="col-start-6 col-end-10 mr-auto">
+            <img src="andrew-valdivia-WJbbdU1-6Dg-unsplash.jpg" alt="Preparation"
+              class="rounded-xl shadow-lg w-72 h-72 hover-effect" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--ingredients-->
+  <section>
+    <div class="swiper mySwiper2 bg-[#0f172a]">
+      <h1 class="text-5xl text-center font-bold text-button py-10">World Class Ingredients</h1>
+      <div class="swiper-wrapper mb-5">
+        <div class="swiper-slide">
+          <div class=" space-y-3">
+            <img src="1.jpg"></img>
+            <h1 class="text-2xl font-bold text-white">PREMIUM FRENCH CHOCOLATE</h1>
+            <p class="text-base text-gray-300">Premium French chocolate is characterized by its high quality, refined
+              flavors, and
+              meticulous craftsmanship. It often features a higher cocoa content, resulting in a darker, less sweet, and
+              more intense flavor profile. French chocolatiers are renowned for their expertise in selecting fine cocoa
+              beans, using traditional techniques, and employing creative flavor combinations.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="space-y-3">
+            <img src="2.jpg"></img>
+            <h1 class="text-2xl font-bold text-white">PRECISION MILLED-FLOUR</h1>
+            <p class="text-base text-gray-300">Precision milled flour refers to flour that is ground with great care and
+              attention to
+              detail, often on demand, to ensure optimal freshness and quality. This milling process often involves
+              using specialized equipment like stone mills, which helps preserve the nutritional value and natural
+              flavors of the grains. </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="space-y-3">
+            <img src="3.jpg"></img>
+            <h1 class="text-2xl font-bold text-white">SLOW-CHURNED BUTTER</h1>
+            <p class="text-base text-gray-300">Slow-churned butter is a type of butter made by slowly agitating cream,
+              allowing the
+              fat globules to clump together and form butter. This traditional method, often involving a maturation
+              stage, develops a richer, creamier texture with a distinctive nutty or hazelnut flavor. The slow churning
+              process allows the cream to develop its full aroma and sensory qualities. </p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="space-y-3">
+            <img src="4.jpg"></img>
+            <h1 class="text-2xl font-bold text-white">TAHITIAN VANILLA BEANS</h1>
+            <p class="text-base text-gray-300">Tahitian vanilla beans, derived from the Vanilla tahitensis orchid, are
+              known for their
+              distinct floral, fruity, and slightly sweet flavor profile with notes of cherry, anise, and caramel. They
+              are typically longer and plumper than other vanilla bean varieties, with a high oil content and a moist,
+              supple texture. Their aroma is equally captivating, often described as sweet, cherry-like, and liquorish.
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="space-y-3">
+            <img src="5.jpg"></img>
+            <h1 class="text-2xl font-bold text-white">MALDON SEA SALT FLAKES</h1>
+            <p class="text-base text-gray-300">Maldon Sea Salt Flakes are renowned for their unique pyramid-shaped
+              crystals and
+              delicate texture, offering a clean, fresh flavor that enhances dishes without being overpowering. These
+              flakes are known for their satisfying crunch and ability to dissolve quickly, making them ideal for
+              finishing dishes or adding a subtle salty note.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--exclusive deals-->
+  <section class="mt-12 mx-4">
+    <h1 class="text-5xl text-center font-bold text-button mb-12">Exclusive Deals</h1>
+    <div class="flex justify-evenly items-center">
+      <div>
+        <img src="466.jpeg" class="w-[600px] h-[600px]">
+      </div>
+      <div class="space-y-6 text-white">
+        <div class="px-20 rounded-xl py-3 flex flex-col justify-center bg-[#0f172a]">
+
+          <!-- Header -->
+          <div>
+            <h1 class="text-center text-3xl font-bold text-button">Full Dozen</h1>
+
+            <h2 class="text-center text-2xl font-bold text-white mt-1">$48</h2>
+
+            <p class="text-base mt-3">
+              12 handcrafted cookies with personalized flavor selection
+            </p>
+          </div>
+
+          <div class="text-sm text-gray-300">
+            <p>• 6 artisanal cookies</p>
+            <p>• 2 cookies of each signature flavor</p>
+            <p>• Premium packaging</p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-4">
+            <button class="color-button text-black px-6 py-2 w-full rounded-full font-bold">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="px-20 rounded-xl py-3 flex flex-col justify-center bg-[#0f172a]">
+
+          <!-- Header -->
+          <div>
+            <h1 class="text-center text-3xl font-bold text-button">Half Dozen</h1>
+
+            <h2 class="text-center text-2xl font-bold text-white mt-1">$48</h2>
+
+            <p class="text-base mt-3">
+              6 handcrafted cookies with personalized flavor selection
+            </p>
+          </div>
+
+          <div class="text-sm text-gray-300">
+            <p>• 6 artisanal cookies</p>
+            <p>• 2 cookies of each signature flavor</p>
+            <p>• Premium packaging</p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-4">
+            <button class="color-button text-black px-6 py-2 w-full rounded-full font-bold">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="px-20 rounded-xl py-3 flex flex-col justify-center bg-[#0f172a]">
+
+          <!-- Header -->
+          <div>
+            <h1 class="text-center text-3xl font-bold text-button">Non-subscription (Full Dozen)</h1>
+
+            <h2 class="text-center text-2xl font-bold text-white mt-1">$59</h2>
+
+            <p class="text-base mt-3">
+              12 handcrafted cookies with personalized flavor selection
+            </p>
+          </div>
+
+          <div class="text-sm text-gray-300">
+            <p>• All flavours</p>
+            <p>• Premium packaging</p>
+          </div>
+
+          <!-- Buttons -->
+          <div class="mt-4">
+            <button class="color-button text-black px-6 py-2 w-full rounded-full font-bold">
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--review-->
+  <section class="my-8">
+    <h1 class="text-5xl text-center font-bold text-button">Review</h1>
+    <div class="flex gap-7">
+      <div class="shadow-xl px-4 py-8 rounded-xl border-white animate__animated" data-animate="animate__slideInLeft">
+        <div class="flex space-x-2 items-center">
+          <img src="img-1.jpg" class="w-10 rounded-lg">
+          <p class="font-bold">KEN NORMAN</p>
+          <i class="fa-brands fa-twitter text-blue-400"></i>
+        </div>
+        <p class="text-sm mt-3 text-gray-600">Great experience with this company. Used them to send a gift to a client
+          and very
+          impressed by personal responsiveness of owner Tracy. She emailed me as soon as order was in to check on the
+          shipping address and when I wanted the tin sent out. </p>
+        <p class="flex justify-end mt-2 text-blue-600">@kennorman</p>
+      </div>
+      <div class="shadow-xl px-4 py-8 rounded-xl border-white animate__animated" data-animate="animate__slideInUp">
+        <div class="flex space-x-2 items-center">
+          <img src="img-2.jpg" class="w-10 rounded-lg">
+          <p class="font-bold">LIARA KARIAN</p>
+          <i class="fa-brands fa-twitter text-blue-400"></i>
+        </div>
+        <p class="text-sm mt-3 text-gray-600">Great experience with this company. Used them to send a gift to a client
+          and very
+          impressed by personal responsiveness of owner Tracy. She emailed me as soon as order was in to check on the
+          shipping address and when I wanted the tin sent out. </p>
+        <p class="flex justify-end mt-2 text-blue-600">@liarakarian</p>
+      </div>
+      <div class="shadow-xl px-4 py-8 rounded-xl border-white animate__animated" data-animate="animate__slideInRight">
+        <div class="flex space-x-2 items-center">
+          <img src="img-3.jpg" class="w-10 rounded-lg">
+          <p class="font-bold">RICKY DANIEL</p>
+          <i class="fa-brands fa-twitter text-blue-400"></i>
+        </div>
+        <p class="text-sm mt-3 text-gray-600">Great experience with this company. Used them to send a gift to a client
+          and very
+          impressed by personal responsiveness of owner Tracy. She emailed me as soon as order was in to check on the
+          shipping address and when I wanted the tin sent out. </p>
+        <p class="flex justify-end mt-2 text-blue-600">@rickydaniel</p>
+      </div>
+    </div>
+  </section>
+
+  <!--blog-->
+  <section>
+    <div class="flex justify-evenly bg-[#0f172a] space-y-3 py-12">
+      <div class="card bg-base-100 w-96 shadow-sm bg-gray-700">
+        <figure>
+          <img class="h-56 w-full" src="freepik__the-style-is-candid-image-photography-with-natural__23311.png" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-bold text-white">From Our Oven to Your Heart: The Story Behind Our
+            Signature Cookies
+          </h2>
+          <p class="text-sm text-gray-300">Every cookie has a story — and ours begins with a family kitchen, the aroma
+            of browned
+            butter, and a belief that indulgence can be healthy.</p>
+          <p class="text-sm text-gray-300">When we started baking, we weren’t aiming to reinvent the cookie. We just
+            wanted to make
+            one that our friends with dietary restrictions could enjoy without compromise. </p>
+          <div class="card-actions justify-end">
+            <p class="underline decoration-yellow-500 cursor-pointer text-button">Read More</p>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 w-96 shadow-sm bg-gray-700">
+        <figure>
+          <img class="h-56 w-full" src="freepik__the-style-is-candid-image-photography-with-natural__23309.png" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-bold text-white">Chewy or Crispy? The Science Behind Perfect Cookie
+            Textures</h2>
+          <p class="text-sm text-gray-300">Why do some cookies melt in your mouth while others snap with a crisp bite?
+            The secret is
+            science.</p>
+          <p class="text-sm text-gray-300">The texture of a cookie isn’t magic — it’s a precise balance of fat, sugar,
+            and heat.
+          <p class="text-xs text-gray-300">• Chewy cookies need more moisture — brown sugar and melted butter are key.
+          </p>
+          <p class="text-xs text-gray-300">• Crispy cookies come from higher white sugar ratios and a longer baking
+            time.</p>
+          </p>
+          <div class="card-actions justify-end">
+            <p class="underline decoration-yellow-500 cursor-pointer text-button">Read More</p>
+          </div>
+        </div>
+      </div>
+      <div class="card bg-base-100 w-96 shadow-sm bg-gray-700">
+        <figure>
+          <img class="h-56 w-full" src="freepik__the-style-is-candid-image-photography-with-natural__23310.png" />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title text-lg font-bold text-white">Gluten-Free Cookies That Actually Taste Amazing</h2>
+          <p class="text-sm text-gray-300">The secret to delicious gluten-free cookies is:</p>
+          <p class="tetx-sm text-gray-300">When we started baking, we weren’t aiming to reinvent the cookie. We just
+            wanted to make
+            one that our friends with dietary restrictions could enjoy without compromise. </p>
+          <p class="text-xs text-gray-300">• Alternative Flours – Almond, oat, and coconut create texture.</p>
+          <p class="text-xs text-gray-300">• Moisture Matters – Add ingredients like honey or applesauce for softness.
+          </p>
+          <div class="card-actions justify-end">
+            <p class="underline decoration-yellow-500 cursor-pointer text-button">Read More</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--newsletter-->
+  <section>
+    <div class="text-center space-y-3 bg-[#111827] text-white py-8">
+      <h1 class="text-5xl text-center text-button font-bold">Stay In Touch</h1>
+      <p>Join our exclusive waitlist to be the first to know when <br>
+        our next limited cookie drop becomes available. Spots fill up fast!</p>
+      <div class="flex items-center justify-center gap-5">
+        <input type="email" class="px-12 py-2 rounded-md" placeholder="Your Email Address">
+        <button type="button" class="border px-8 py-2 color-button rounded-full text-black font-bold">SUBSCRIBE</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer sm:footer-horizontal bg-black text-white py-10">
+    <aside class="ml-5">
+      <p class="text-3xl"><span class="text-button font-bold">KETO</span> Cookie</p>
+      <p>
+        Premium keto cookies delivered monthly.<br>
+        Indulgence redefined.
+      </p>
+      <div class="flex space-x-5">
+        <i class="fa-brands fa-facebook-f border-2 rounded-full p-2"></i>
+        <i class="fa-brands fa-instagram border-2 rounded-full p-2"></i>
+        <i class="fa-brands fa-youtube border-2 rounded-full p-2"></i>
+        <i class="fa-brands fa-twitter border-2 rounded-full p-2"></i>
+      </div>
+    </aside>
+    <nav>
+      <h6 class="footer-title text-lg">Explore</h6>
+      <a class="link link-hover">Home</a>
+      <a class="link link-hover">Flavours</a>
+      <a class="link link-hover">Process</a>
+      <a class="link link-hover">Collection</a>
+      <a class="link link-hover">Subscription</a>
+      <a class="link link-hover">Review</a>
+      <a class="link link-hover">Contact</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title text-lg">Company</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Shipping</a>
+      <a class="link link-hover">Help Center</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title text-lg">Legal</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+  </footer>
+  <footer class="footer sm:footer-horizontal footer-center bg-black text-white text-lg p-4">
+    <aside>
+      <p>Copyright © 2025 - All right reserved by KETO Cookie</p>
+    </aside>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const animatedItems = document.querySelectorAll("[data-animate]");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const animationClasses = entry.target.getAttribute("data-animate");
+            entry.target.classList.remove("opacity-0"); // show
+            entry.target.classList.add(...animationClasses.split(" "));
+            observer.unobserve(entry.target); // Run only once
+          }
+        });
+      }, { threshold: 0.2 }); // trigger when 20% visible
+
+      animatedItems.forEach(item => observer.observe(item));
+    });
+  </script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2, // Show 2 slides at a time
+      spaceBetween: 30, // Gap between slides
+      loop: true,
+      speed: 800,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+  <script>
+    var swiper2 = new Swiper(".mySwiper2", {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: { delay: 2000 },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+</body>
+
+</html>
